@@ -1,0 +1,22 @@
+[project]
+name = "a2-job-post-extractor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "shahzaibm3", email = "Shahzaib.Siraj@m3tech.com.pk" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "google-genai>=3.6.1",
+    "httpx>=0.28.1",
+    "pydantic>=2.14.4",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+a2-job-post-extractor = "a2_job_post_extractor:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
